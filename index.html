@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICARLY2026</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #4f46e5;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .welcome {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .welcome h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+
+        .welcome p {
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+
+        button {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            margin: 6px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ICARLY2026</h1>
+        <p>Connect • Share • Discover</p>
+    </header>
+
+    <div class="container">
+
+        <div class="welcome" id="welcome">
+            <h2>Welcome to ICARLY2026!</h2>
+
+            <p>
+                Your new social platform starts here.
+            </p>
+
+            <button onclick="startApp()">
+                Get Started
+            </button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 ICARLY2026</p>
+    </footer>
+
+    <script>
+        function startApp() {
+
+            document.getElementById("welcome").innerHTML = `
+                <h2>Welcome to ICARLY2026 🎉</h2>
+
+                <p>
+                    Connect, share and discover.
+                </p>
+
+                <button onclick="showMessage('Create Post')">
+                    Create Post
+                </button>
+
+                <button onclick="showMessage('Explore')">
+                    Explore
+                </button>
+
+                <button onclick="showMessage('My Profile')">
+                    My Profile
+                </button>
+            `;
+        }
+
+        function showMessage(feature) {
+            alert(feature + " is coming to ICARLY2026!");
+        }
+    </script>
+
+</body>
+</html>
